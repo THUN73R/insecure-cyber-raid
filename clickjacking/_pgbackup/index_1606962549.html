@@ -1,0 +1,14 @@
+<html> 
+    <head> 
+        <title>Clickjacking / framing test</title>         
+        <script type="text/javascript" src="clickjack.js"></script>         
+    </head>     
+    <body style="background: linear-gradient(90deg, #ff00cc, #333399);"> 
+        <h1><span class="judul" style="background-color: #000000; color: #f60808; font-variant: normal; text-transform: uppercase; text-align: center;">Test a page for clickjacking/framing vulnerability</span></h1> 
+        <p style="font-variant: normal; background-color: #000000; color: #ff0000; font-style: italic; font-size: 30;">Enter the URL to frame:</p> 
+        <input id="url" type="text" value="http://example.com" style="font-size: 20; text-transform: none; background: linear-gradient(90deg, #8e9eab, #eef2f3);">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus pulvinar faucibus neque, nec rhoncus nunc ultrices sit amet. Curabitur ac sagittis neque, vel egestas est. Aenean elementum, erat at aliquet hendrerit, elit nisl posuere tortor, id suscipit diam dui sed nisi. Morbi sollicitudin massa vel tortor consequat, eget semper nisl fringilla. Maecenas at hendrerit odio. Sed in mi eu quam suscipit bibendum quis at orci. Pellentesque fermentum nisl purus, et iaculis lectus pharetra sit amet.</input> 
+        <button id="submit-test" style="background: linear-gradient(90deg, #0052D4, #4364F7, #6FB1FC); font-size: 20;">Test it!</button>         
+        <br/> 
+        <iframe src="about:blank" id="iframe" width="800px" height="600px"></iframe>         
+    </body>     
+</html>
