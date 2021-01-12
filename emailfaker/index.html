@@ -25,15 +25,14 @@
 
     </head>
 
-    <!-- Background image set here -->
+
     <body style="background-image: url('img/bg.png');">
 
 
-    <!-- Main container. It is thinner so it's using a col-6 with an offset -->
+   
     <div class="col-md-6 offset-md-3">
 
-        <!-- Zaqar Icon -->
-        <!-- This is a generic icon, in future updates a custom icon would be awesome -->
+      
         <img src="img/zaqar-icon.png" alt="Zaqar Icon" class="img-fluid mt-4 mb-4" id="email-icon">
         <!-- Start Form -->
         <form class="form" role="form" autocomplete="off" action="mailer.php" method="post" enctype="multipart/form-data">
@@ -42,7 +41,7 @@
            <div class="card card-outline-secondary">
                <!-- Card header -->
                <div class="card-header text-center">
-                   <h1 class="mb-0">Zaqar: The Email Spoofer</h1>
+                   <h1 class="mb-0">Insecure Raid Email Spoofer</h1>
                    <h4><span class="lead">Spoof all the emails!</span></h4>
                </div>
 
@@ -50,46 +49,46 @@
                <div class="card-body">
                    <!-- Zaqar Quote -->
                    <blockquote cite="https://en.wikipedia.org/wiki/Zaqar">
-                      <p class="mb-0">In Mesopotamian mythology, Zaqar is the messenger of the god Sin. He relays these messages to mortals through his power over their dreams and nightmares.</p>
+                      <p class="mb-0">Indahnya pemandangan</p>
                     </blockquote>
 
                     <!-- Application Description -->
-                    <p>Zaqar is designed to aid penetration testers in creating spoofed emails to conduct social engineering attacks. This sleek, simple tool allows testers to send an email looking as if it came from any email address with options of using a rich text editor or raw text. </p>
+                    <p>Yos buat ngetes aja tangung jawab ditangung pengguna</p>
 
                        <!-- FROM NAME -->
                        <label for="fromName">From Name</label>
                        <div class="row mb-1">
                            <div class="col-lg-12">
-                                 <input type="text" name="fromName" class="form-control" data-toggle="tooltip" data-placement="left" title="This is the name that will appear in the FROM field of the spoofed email" required>
+                                 <input type="text" name="fromName" class="form-control" data-toggle="tooltip" data-placement="left" title="Pake nama apa ster buat ngetes?" required>
                            </div>
                        </div>
 
                         <!-- FROM EMAIL -->
-                       <label for="fromMail">From Email Address</label>
+                       <label for="fromMail">Email?</label>
                        <div class="row mb-1">
                            <div class="col-lg-12">
-                                   <input type="email" name="fromEmail"  class="form-control" data-toggle="tooltip" data-placement="left" title="The spoofed email will look as if it appeared from this email addrress" required>
+                                   <input type="email" name="fromEmail"  class="form-control" data-toggle="tooltip" data-placement="left" title="Emailnya mas?" required>
                            </div>
                        </div>
 
                       <!-- TO EMAIL  -->
-                      <label for="toMail">To Email Address(s)</label>
+                      <label for="toMail">Kirimnya kemana(bisa ke akun lu)</label>
                       <div class="row mb-1">
                           <div class="col-lg-12">
-                                <input type="email" name="toEmail"  class="form-control" data-toggle="tooltip" data-placement="left" title="This is the email address that you want to send the spoofed email to" required>
-                                <p><strong>Pro Tip: </strong> You can send to multiple addresses at once if you seperate each address with a comma</p>
+                                <input type="email" name="toEmail"  class="form-control" data-toggle="tooltip" data-placement="left" title="Buat korban" required>
+                                <p><strong>Tips: </strong> Lu dapat mengirim ke beberapa alamat sekaligus jika lu memisahkan setiap alamat dengan koma</p>
 
                             <!-- More Options -->
                                  <button type="button" class="btn-sm btn-primary mb-3" data-toggle="collapse" data-target="#more-options" id="more-options-btn"><span id="show-more">Show</span> More Sending Options</button>
                                  <div class="collapse alert alert-secondary" id="more-options">
-                                     <p class="m-0"><strong>Note: </strong> You still want to add at least one "to" address, as many anti-spam filters will discard messages with no "to" field in the header. It does not have to be a real address.</p>
+                                     <p class="m-0"><strong>Catatan: </strong> Kalo lu masih mau menambahkan setidaknya satu alamat "ke", karena banyak filter anti-spam akan membuang pesan tanpa bidang "ke" di header. Tidak harus alamat asli.</p>
                                      <div class="row">
                                          <div class="col">
-                                             <label for="cc">Cc: Email Address(s)</label>
+                                             <label for="cc">Cc: Alaman email(s)</label>
                                              <input type="text" name="cc" class="form-control">
                                          </div>
                                          <div class="col">
-                                             <label for="bcc">Bcc: Email Address(s)</label>
+                                             <label for="bcc">Bcc: Alamat email(s)</label>
                                              <input type="text" name="bcc" class="form-control">
                                          </div>
                                      </div>
@@ -99,16 +98,16 @@
                       </div>
 
                       <!-- SUBJECT LINE  -->
-                      <label for="subjectLine">Subject Line</label>
+                      <label for="subjectLine">Subjek</label>
                       <div class="row mb-1">
                           <div class="col-lg-12">
-                                  <input type="text" name="subjectLine"      class="form-control" data-toggle="tooltip" data-placement="left" title="Whatever you type here will appear in the subject line of the spoofed email" maxlength="50" required>
+                                  <input type="text" name="subjectLine"      class="form-control" data-toggle="tooltip" data-placement="left" title="terserah isi apa" maxlength="50" required>
                           </div>
                       </div>
 
                         <!-- About Message Body     -->
-                        <label>Message Body</label>
-                        <p>When crafting your email you have two options: you can either build it using the rich text editor (which will convert the message to HTML) or you can send the message as raw text. While rich text allows more flexibility in how a message can be presented, not all mail clients render HTML correctly or at all. You need to research your target in order to know if the rich text editor is appropriate--when in doubt, use the raw editor.</p>
+                        <label>Pesan</label>
+                        <p>Terserah isi apa.</p>
 
                         <!-- Message Body Input -->
                         <div class="row mb-1">
@@ -117,10 +116,10 @@
                                <!-- BS Tabs navigation -->
                                <ul class="nav nav-tabs" role="tablist">
                                  <li class="nav-item">
-                                   <a class="nav-link active" data-toggle="tab" href="#rich-text" role="tab">Rich Text</a>
+                                   <a class="nav-link active" data-toggle="tab" href="#rich-text" role="tab">Teks 1</a>
                                  </li>
                                  <li class="nav-item">
-                                   <a class="nav-link" data-toggle="tab" href="#raw-text" role="tab">Raw Text</a>
+                                   <a class="nav-link" data-toggle="tab" href="#raw-text" role="tab">Teks 2</a>
                                  </li>
                                </ul>
 
@@ -144,18 +143,18 @@
                         <div class="row mb-3 mt-3">
                             <!-- <input type="file" name="attachment"> -->
                             <div class="col-12">
-                                <strong>File Attachment</strong>
-                                <p>You have the option to send an attatchment with your email. Make sure that your webserver php.ini file allows for file uploads, and that the max upload size is set to at least the size of your attatchment. This may be the case by default, and an error will be presented if it does not work.</p>
+                                <strong>File Tambahan</strong>
+                                <p>terserah nitip apa</p>
                                 <div class="custom-file">
                                   <input type="file" class="custom-file-input" id="customFile" name="attachment" onchange="fileNameChange()">
-                                  <label class="custom-file-label" for="customFile"><span style="font-weight: normal;  font-style: italic;" id="customFileText">Choose file</span></label>
+                                  <label class="custom-file-label" for="customFile"><span style="font-weight: normal;  font-style: italic;" id="customFileText">Pilih file</span></label>
                                 </div>
                             </div>
                         </div>
 
                        <div class="mt-5">
                            <input type="checkbox" onchange="document.getElementById('submitBtn').disabled = !this.checked;"/>
-                           By checking this box you agree to the <a href="#" data-toggle="modal" data-target="#termsOfUsage">basic terms of usage</a> for this application
+                         Dengan klik kotak disebelah:v<a href="#" data-toggle="modal" data-target="#termsOfUsage">basic terms of usage</a> untuk fitur ini
                        </div>
 
                        <!-- Terms of Usage -->
@@ -170,21 +169,10 @@
                                 </button>
                               </div>
                               <div class="modal-body">
-                                <p>Okay, so I am not a lawyer but this is me trying to cover my ass the best that I can. By checking this box you are agreeing to <strong>only</strong> send a spoofed email if either of the two situation are true:</p>
-                                <ol>
-                                    <li>
-                                        You are conducting a formal and legal penetration test in which you have the explicit permission of the organization that represents the target, and such a targeted attack is outlined in your planned attack scope.
-                                    </li>
-                                    <li>
-                                        You are a student or learning about mail systems and want to learn more about mail security. If this is the case, you should only be spoofing accounts that you have legal access to, or have otherwise gotten permission to use. Spoofed emails sent for the sake of learning should not attempt to steal credentials or other sensitive information, even as a ‘joke’ or ‘prank.’
-                                    </li>
-                                </ol>
-
-                                <p>Using this application for any other reason falls outside of its intended use and is not endorsed, encouraged, or approved by the application’s creator or its contributors. This is especially true if this application is being used to send spam messages or commit fraud. This mailer does little to protect the identity of where it was truly sent and the message can be easily tracked back to the originator.  It only masks the identity on a surface level inside of a mail client. </p>
-
-                              </div>
+                                <p>Oke mek<strong>only</strong> Dosa ditanggung pengguna</p>
+                             
                               <div class="modal-footer">
-                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Okay, Got It</button>
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Oke meki</button>
                               </div>
                             </div>
                           </div>
@@ -197,7 +185,7 @@
                 <div class="checkbox">
 
                 </div>
-                <button type="submit" class="btn btn-primary btn-lg mt-3" style="display: block; margin:auto; width:100%;" id="submitBtn" name="submit" disabled>Send Spoofed Email</button>
+                <button type="submit" class="btn btn-primary btn-lg mt-3" style="display: block; margin:auto; width:100%;" id="submitBtn" name="submit" disabled>KIRIM</button>
             </div>
 
         </fieldset>
